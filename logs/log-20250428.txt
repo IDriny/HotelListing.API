@@ -1,0 +1,53 @@
+2025-04-28 12:57:00.229 +03:00 [INF] Now listening on: https://localhost:7038
+2025-04-28 12:57:00.260 +03:00 [INF] Now listening on: http://localhost:5014
+2025-04-28 12:57:00.452 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-28 12:57:00.454 +03:00 [INF] Hosting environment: Development
+2025-04-28 12:57:00.455 +03:00 [INF] Content root path: F:\ASP.NET With Web APIs\HotelListing.API
+2025-04-28 13:05:34.687 +03:00 [INF] Now listening on: https://localhost:7038
+2025-04-28 13:05:34.767 +03:00 [INF] Now listening on: http://localhost:5014
+2025-04-28 13:05:34.906 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-28 13:05:34.909 +03:00 [INF] Hosting environment: Development
+2025-04-28 13:05:34.911 +03:00 [INF] Content root path: F:\ASP.NET With Web APIs\HotelListing.API
+2025-04-28 16:40:44.020 +03:00 [INF] Now listening on: https://localhost:7038
+2025-04-28 16:40:44.049 +03:00 [INF] Now listening on: http://localhost:5014
+2025-04-28 16:40:44.133 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-28 16:40:44.133 +03:00 [INF] Hosting environment: Development
+2025-04-28 16:40:44.134 +03:00 [INF] Content root path: F:\ASP.NET With Web APIs\HotelListing.API
+2025-04-28 16:42:06.130 +03:00 [INF] Now listening on: https://localhost:7038
+2025-04-28 16:42:06.149 +03:00 [INF] Now listening on: http://localhost:5014
+2025-04-28 16:42:06.196 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-28 16:42:06.197 +03:00 [INF] Hosting environment: Development
+2025-04-28 16:42:06.198 +03:00 [INF] Content root path: F:\ASP.NET With Web APIs\HotelListing.API
+2025-04-28 16:42:09.719 +03:00 [INF] HTTP GET /api/hotel responded 200 in 30.3682 ms
+2025-04-28 16:42:41.631 +03:00 [INF] Now listening on: https://localhost:7038
+2025-04-28 16:42:41.649 +03:00 [INF] Now listening on: http://localhost:5014
+2025-04-28 16:42:41.695 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-28 16:42:41.696 +03:00 [INF] Hosting environment: Development
+2025-04-28 16:42:41.697 +03:00 [INF] Content root path: F:\ASP.NET With Web APIs\HotelListing.API
+2025-04-28 16:42:56.396 +03:00 [INF] HTTP POST /api/hotel responded 400 in 61.7899 ms
+2025-04-28 16:43:27.205 +03:00 [INF] HTTP POST /api/hotel responded 400 in 21.1114 ms
+2025-04-28 16:44:59.403 +03:00 [INF] HTTP PUT /api/hotel/0 responded 404 in 5.8729 ms
+2025-04-28 16:45:20.229 +03:00 [INF] HTTP PUT /api/hotel/0 responded 404 in 0.5936 ms
+2025-04-28 16:45:42.791 +03:00 [INF] HTTP PUT /api/hotel/0 responded 404 in 0.5505 ms
+2025-04-28 16:46:13.001 +03:00 [INF] HTTP POST /api/hotel responded 201 in 15.4176 ms
+2025-04-28 16:46:24.554 +03:00 [INF] HTTP PUT /api/hotel/0 responded 404 in 0.5057 ms
+2025-04-28 16:47:54.892 +03:00 [INF] HTTP PUT /api/hotel/0 responded 404 in 0.4686 ms
+2025-04-28 16:48:10.537 +03:00 [INF] Now listening on: https://localhost:7038
+2025-04-28 16:48:10.585 +03:00 [INF] Now listening on: http://localhost:5014
+2025-04-28 16:48:10.692 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-28 16:48:10.693 +03:00 [INF] Hosting environment: Development
+2025-04-28 16:48:10.694 +03:00 [INF] Content root path: F:\ASP.NET With Web APIs\HotelListing.API
+2025-04-28 16:48:19.620 +03:00 [INF] HTTP PUT /api/hotel/0 responded 404 in 50.2913 ms
+2025-04-28 16:48:27.943 +03:00 [INF] HTTP POST /api/hotel responded 201 in 13.4381 ms
+2025-04-28 16:48:49.042 +03:00 [INF] HTTP PUT /api/hotel/0 responded 404 in 0.9514 ms
+2025-04-28 16:53:21.333 +03:00 [INF] Now listening on: https://localhost:7038
+2025-04-28 16:53:21.359 +03:00 [INF] Now listening on: http://localhost:5014
+2025-04-28 16:53:21.425 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-28 16:53:21.426 +03:00 [INF] Hosting environment: Development
+2025-04-28 16:53:21.427 +03:00 [INF] Content root path: F:\ASP.NET With Web APIs\HotelListing.API
+2025-04-28 16:53:34.627 +03:00 [INF] HTTP GET /api/Hotel responded 200 in 31.2373 ms
+2025-04-28 16:53:36.349 +03:00 [INF] HTTP GET /api/Hotel responded 200 in 0.7872 ms
+2025-04-28 16:56:24.109 +03:00 [INF] HTTP POST /api/Hotel responded 201 in 66.5545 ms
+2025-04-28 16:57:39.751 +03:00 [INF] HTTP PUT /api/Hotel/4 responded 204 in 12.6874 ms
+2025-04-28 16:59:17.425 +03:00 [INF] HTTP DELETE /api/Hotel/4 responded 204 in 31.8881 ms
+2025-04-28 16:59:19.368 +03:00 [INF] HTTP DELETE /api/Hotel/4 responded 404 in 5.4260 ms
