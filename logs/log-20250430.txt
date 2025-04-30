@@ -1,0 +1,5 @@
+2025-04-30 12:28:25.551 +03:00 [INF] Now listening on: https://localhost:7038
+2025-04-30 12:28:25.586 +03:00 [INF] Now listening on: http://localhost:5014
+2025-04-30 12:28:25.676 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-30 12:28:25.678 +03:00 [INF] Hosting environment: Development
+2025-04-30 12:28:25.679 +03:00 [INF] Content root path: F:\ASP.NET With Web APIs\HotelListing.API
