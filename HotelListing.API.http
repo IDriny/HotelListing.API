@@ -1,6 +1,42 @@
-@HotelListing.API_HostAddress = http://localhost:5014
+@HotelListing.API_HostAddress = https://localhost:7038
 
-GET {{HotelListing.API_HostAddress}}/weatherforecast/
-Accept: application/json
+
+
+GET {{HotelListing.API_HostAddress}}/api/hotel
+
+###
+
+POST {{HotelListing.API_HostAddress}}/api/hotel
+Content-Type: application/json
+
+{
+  
+    "id": 4,
+    "name": "Grand Plaza",
+    "address": "123 main St",
+    "rating": 3.9
+  
+}
+
+###
+
+@id=0
+DELETE {{HotelListing.API_HostAddress}}/api/hotel/{{id}}
+
+###
+
+GET {{HotelListing.API_HostAddress}}/api/hotel/{{id}}
+
+###
+
+PUT {{HotelListing.API_HostAddress}}/api/hotel/{{id}}
+Content-Type: application/json
+
+{
+  "id": 4,
+  "name": "Test Hotel",
+  "address": "123 main St",
+  "rating": 3.9
+}
 
 ###

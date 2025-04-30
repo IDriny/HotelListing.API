@@ -1,8 +1,16 @@
+using HotelListing.API.Persistence;
+using Microsoft.EntityFrameworkCore;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+//adding our connection string
+var connectionString = builder.Configuration.GetConnectionString("HotelDbConnectionString");
+//here we pass our connection string to the Builder using 
+//our DB context options that we declared in our DB context
+builder.Services.AddDbContext<HotelDbContext>(options=>options.UseSqlServer(connectionString));
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
