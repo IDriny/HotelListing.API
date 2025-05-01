@@ -39,7 +39,7 @@ namespace HotelListing.API.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Countries");
+                    b.ToTable("Countries", (string)null);
                 });
 
             modelBuilder.Entity("HotelListing.API.Core.Domain.Hotel", b =>
@@ -67,7 +67,7 @@ namespace HotelListing.API.Migrations
 
                     b.HasIndex("CountryId");
 
-                    b.ToTable("Hotels");
+                    b.ToTable("Hotels", (string)null);
                 });
 
             modelBuilder.Entity("HotelListing.API.Core.Domain.Hotel", b =>
