@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using HotelListing.API.Core.Domain;
+using HotelListing.API.Models.Country;
+using HotelListing.API.Models.Hotel;
 using HotelListing.API.Persistence;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace HotelListing.API.Controllers
 {
@@ -15,32 +19,35 @@ namespace HotelListing.API.Controllers
     public class HotelsController : ControllerBase
     {
         private readonly HotelDbContext _context;
+        private readonly IMapper _mapper;
 
-        public HotelsController(HotelDbContext context)
+        public HotelsController(HotelDbContext context,IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
 
         // GET: api/Hotels
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Hotel>>> GetHotels()
+        public async Task<ActionResult<IEnumerable<GetHotelModel>>> GetHotels()
         {
             var hotels= await _context.Hotels.ToListAsync();
-            return Ok(hotels);
+            var records = _mapper.Map<List<Hotel>>(hotels);
+            return Ok(records);
         }
 
         // GET: api/Hotels/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Hotel>> GetHotel(int id)
+        public async Task<ActionResult<GetHotelDetailsModel>> GetHotel(int id)
         {
-            var hotel = await _context.Hotels.FindAsync(id);
+            var hotel = await _context.Hotels.FirstOrDefaultAsync(h=>h.Id==id);
 
             if (hotel == null)
             {
                 return NotFound();
             }
-
-            return hotel;
+            var record = _mapper.Map<Hotel>(hotel);
+            return Ok(record);
         }
 
         // PUT: api/Hotels/5
@@ -77,8 +84,9 @@ namespace HotelListing.API.Controllers
         // POST: api/Hotels
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Hotel>> PostHotel(Hotel hotel)
+        public async Task<ActionResult<Hotel>> PostHotel(CreateHotelModel CreatedHotel)
         {
+            var hotel = _mapper.Map<Hotel>(CreatedHotel);
             _context.Hotels.Add(hotel);
             await _context.SaveChangesAsync();
 
